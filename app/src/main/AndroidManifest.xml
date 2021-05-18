@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.inner">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:label="Corona Today"
+        android:roundIcon="@mipmap/corona_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Location"
+            android:label="선택 화면"></activity>
+        <activity android:name=".Menu"
+            android:label="메뉴 화면"></activity>
+        <activity android:name=".Msg"
+            android:label="재난 문자"></activity>
+        <activity android:name=".Hospital"
+            android:label="선별 진료소"></activity>
+    </application>
+
+</manifest>
