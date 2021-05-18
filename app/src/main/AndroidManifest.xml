@@ -24,6 +24,8 @@
             android:label="재난 문자"></activity>
         <activity android:name=".Hospital"
             android:label="선별 진료소"></activity>
+        <activity android:name=".Prevent"
+            android:label="증상 및 예방법"></activity>
     </application>
 
 </manifest>

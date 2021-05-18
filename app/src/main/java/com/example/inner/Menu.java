@@ -15,6 +15,8 @@ public class Menu extends AppCompatActivity {
     private Button msg2;
     private Button hospital1;
     private Button hospital2;
+    private Button prevent1;
+    private Button prevent2;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,8 @@ public class Menu extends AppCompatActivity {
         msg2 = findViewById(R.id.msg2);
         hospital1 = findViewById(R.id.hospital1);
         hospital2 = findViewById(R.id.hospital2);
+        prevent1 = findViewById(R.id.prevent1);
+        prevent2 = findViewById(R.id.prevent2);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +64,19 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        prevent1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Prevent.class);
+                startActivity(intent);
+            }
+        });
+        prevent2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Prevent.class);
+                startActivity(intent);
+            }
+        });
     }
 }
