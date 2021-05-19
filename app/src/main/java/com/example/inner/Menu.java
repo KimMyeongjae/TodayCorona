@@ -13,6 +13,8 @@ public class Menu extends AppCompatActivity {
     private ImageView back;
     private Button msg1;
     private Button msg2;
+    private Button self1;
+    private Button self2;
     private Button hospital1;
     private Button hospital2;
     private Button prevent1;
@@ -29,10 +31,26 @@ public class Menu extends AppCompatActivity {
         hospital2 = findViewById(R.id.hospital2);
         prevent1 = findViewById(R.id.prevent1);
         prevent2 = findViewById(R.id.prevent2);
+        self1 = findViewById(R.id.self1);
+        self2 = findViewById(R.id.self2);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        self1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Self.class);
+                startActivity(intent);
+            }
+        });
+        self2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Self.class);
                 startActivity(intent);
             }
         });
