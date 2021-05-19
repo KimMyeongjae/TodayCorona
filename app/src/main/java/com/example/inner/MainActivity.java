@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -75,7 +76,22 @@ public class MainActivity extends AppCompatActivity {
 
     private Context mContext;
     private NewsAdapater nAdapter;
+    private long backTime= 0;
 
+    @Override
+
+    public void onBackPressed(){
+
+        if(System.currentTimeMillis() - backTime >= 2000){
+            backTime=System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(),"한번더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }
+
+        else if(System.currentTimeMillis() - backTime < 2000 ){
+
+            finish();
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
