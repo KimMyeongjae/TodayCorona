@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/menu_background"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@color/toolbar_background"
         app:contentInsetStart="0dp"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -45,125 +46,73 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/hospital"
+    <Button
+        android:id="@+id/hospital1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="@color/gray"
-        android:orientation="horizontal">
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/layout_design"
+        android:gravity="center"
+        android:text="선별진료소, 백신접종병원"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/hospital1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:background="@color/gray"
-            android:gravity="left"
-            android:text="선별진료소, 백신접종병원"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/hospital2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:background="@color/gray"
-            android:text="→" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/prevent"
+    <Button
+        android:id="@+id/prevent1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="@color/gray"
-        android:orientation="horizontal">
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/layout_design"
+        android:gravity="center"
+        android:text="증상 및 예방법"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/prevent1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:background="@color/gray"
-            android:gravity="left"
-            android:text="증상 및 예방법"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/prevent2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:background="@color/gray"
-            android:text="→" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/self"
+    <Button
+        android:id="@+id/self1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="@color/gray"
-        android:orientation="horizontal">
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/layout_design"
+        android:gravity="center"
+        android:text="코로나 자가진단"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/self1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:background="@color/gray"
-            android:gravity="left"
-            android:text="코로나 자가진단"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/self2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:background="@color/gray"
-            android:text="→" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/msg"
+    <Button
+        android:id="@+id/msg1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="@color/gray"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/msg1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:background="@color/gray"
-            android:gravity="left"
-            android:text="재난문자"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/msg2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:background="@color/gray"
-            android:text="→" />
-    </LinearLayout>
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/layout_design"
+        android:gravity="center"
+        android:text="재난문자"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400sp"
-        android:background="@color/gray"
+        android:layout_marginStart="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/tab_design"
         android:gravity="center"
         android:text="공지사항"
         android:textSize="20sp" />
