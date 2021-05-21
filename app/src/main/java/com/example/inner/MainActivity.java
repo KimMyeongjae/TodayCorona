@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else if(System.currentTimeMillis() - backTime < 2000 ){
-
             finish();
         }
     }

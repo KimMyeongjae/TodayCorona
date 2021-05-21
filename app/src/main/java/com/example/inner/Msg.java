@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Msg extends AppCompatActivity {
-    private String Url = "http://apis.data.go.kr/1741000/DisasterMsg3/getDisasterMsg1List?serviceKey=rt3ZWGfDs0X0oQdxVXA0VZSKEDsug5L5SFkddQWfQFdijH2mus%2FmhoCSE1LSdQpv2WwDhF4xZ4iwzQd%2B1qje3g%3D%3D&pageNo=1&numOfRows=15&type=xml";
+    private String Url = "http://apis.data.go.kr/1741000/DisasterMsg3/getDisasterMsg1List?serviceKey=rt3ZWGfDs0X0oQdxVXA0VZSKEDsug5L5SFkddQWfQFdijH2mus%2FmhoCSE1LSdQpv2WwDhF4xZ4iwzQd%2B1qje3g%3D%3D&pageNo=1&numOfRows=30&type=xml";
     private TextView text;
     private String data = "";
     private ListView msgView;
